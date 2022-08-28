@@ -35,18 +35,17 @@ target/
 
 
 #All build without .build
-*build/
+/build/
 
 #All jar, without module2.jar
 *.jar
-!module2.jar
+!/module2.jar
 
 #application-local.properties
-application-local.properties
+/application-local.properties
 
 #folder .idea
 .idea/
 
-#folder .idea_copy, without workspace.xml —
-.idea_copy/
-!.idea_copy/workspace.xml
+#folder .idea_copy, without workspace.xml
+**!/.idea_copy/workspace.xml
